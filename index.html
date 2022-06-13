@@ -38,6 +38,7 @@
 
 					<ul id="navigation">
 						<li><a href="index.html#contact">Contact</a></li>
+						<li><button id="submit-btn" onclick="redirect()">Login For Root user</button></li>
 
 					</ul>
 				</div>
@@ -119,7 +120,7 @@
 
 					<span><i class="fab fa-twitter fa-lg"></i><a target="_blank" href="https://twitter.com/dhruvrana0000"> @dhruvrana0000</a></span>
 					<br>
-					<span><i class="fab fa-instagram fa-lg"></i><a target="_blank" href="https://www.instagram.com/techlover_dhruv/"> @techolver_dhruv</a></span>
+					<span><i class="fab fa-instagram fa-lg"></i><a target="_blank" href="https://www.instagram.com/ranadhruv_29/"> @techolver_dhruv</a></span>
 				</div>
 			</div>
 
@@ -185,7 +186,7 @@
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form">
+			<form id="contact-form" action="submit.php" method="POST">
 				<a name="contact"></a>
 
 				<label>Name</label>
@@ -200,11 +201,18 @@
 				<label>Message</label>
 				<textarea class="input-field" name="message"></textarea>
 
-				<input id="submit-btn" type="submit" value="Send">
+				<input id="submit-btn" type="submit" name="submit" value="Send">
 			</form>
 		</div>
 	</section>
 
+<script type="text/javascript">
+
+ function redirect() {
+	 window.location.assign('login.php');
+ }
+
+</script>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
